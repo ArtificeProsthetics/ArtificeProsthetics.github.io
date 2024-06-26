@@ -448,7 +448,7 @@ a {
 .sidebar {
     height: 100%;
     width: 200px;
-    background-color: #fff;
+    background-color: #222;
     position: fixed !important;
     z-index: 1;
     overflow: auto
@@ -1490,6 +1490,11 @@ a {
 .white, .hover-white:hover {
     color: #000 !important;
     background-color: #fff !important
+}
+
+.dark-blue {
+    color: #fff;
+    background-color: #0a0f15;
 }
 
 .black, .hover-black:hover {
