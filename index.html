@@ -11,7 +11,7 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .row-padding img {margin-bottom: 12px}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
+#main {margin-left: 200px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
@@ -19,10 +19,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <body class="dark-blue">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="sidebar bar-block small hide-small center">
+<nav class="sidebar bar-block small hide-medium hide-small center">
   <!-- Avatar image in top left corner -->
   <img src="images/Wireframe.black.png" style="width: 100%">
-  <a href="#" class="bar-item button padding-large black">
+  <a href="#" class="bar-item button padding-large hover-black">
     <i class="fa fa-home xxlarge"></i>
     <p>HOME</p>
   </a>
@@ -54,9 +54,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="padding-large" id="main">
   <!-- Header/Home -->
   <header class="container padding-32 center dark-blue" id="home">
-    <h1 class="jumbo"><span class="hide-small">Artifice</span></h1>
+    <h1 class="jumbo">Artifice</h1>
     <p>Developed by Lincoln Wagner</p>
-    <img src="images/render.png" alt="hand" class="image" width="400">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.7/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/blEhpVTV40z14F4v/scene.splinecode"></spline-viewer>
+    <!-- <img src="images/render.png" alt="hand" class="image" width="400"> -->
   </header>
 
   <!-- About Section -->
@@ -213,7 +215,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-pinterest-p hover-opacity"></i>
     <i class="fa fa-twitter hover-opacity"></i>
     <i class="fa fa-linkedin hover-opacity"></i>
-    <p class="medium">Powered by <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="hover-text-green">w3.css</a></p>
+    <p class="medium">Powered by <a href="https://www.github.com" target="_blank" class="hover-text-green">Github</a></p>
   <!-- End footer -->
   </footer>
 
