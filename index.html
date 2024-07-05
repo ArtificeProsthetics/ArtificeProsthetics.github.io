@@ -58,6 +58,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>Developed by Lincoln Wagner</p>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.8/build/spline-viewer.js"></script>
     <spline-viewer url="https://prod.spline.design/jddavdombxwYi4Es/scene.splinecode"></spline-viewer>
+    <script>
+      window.onload = function() {
+      var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+      shadowRoot.querySelector('#logo').remove();
+    }
+    </script>
     <!-- <img src="images/render.png" alt="hand" class="image" width="400"> -->
   </header>
 
