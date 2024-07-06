@@ -1292,7 +1292,7 @@ a {
 }
 
 .margin-top {
-    margin-top:12px !important
+    margin-top:16px !important
 }
 
 .margin-bottom {
@@ -1776,4 +1776,25 @@ spline-viewer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.ribbon-topleft {
+    width: 0; 
+    height: 0; 
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-top: 10vw solid black;
+    transform: translateX(-50%);
+}
+
+.ribbon-bottomright {
+    width: 0; 
+    height: 0; 
+    border-left: 10vw solid transparent;
+    border-right: 10vw solid transparent;
+    border-bottom: 10vw solid black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translateX(50%);
 }

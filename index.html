@@ -11,7 +11,7 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .row-padding img {margin-bottom: 12px}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 200px}
+#main {margin-left: 10vw}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
@@ -26,6 +26,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
 </nav>
 
+<!-- Top Left Ribbon -->
+<div class="ribbon-topleft" id="main"></div>
+
 <!-- Page Content -->
 <div class="vertical-center">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.8/build/spline-viewer.js"></script>
@@ -39,6 +42,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<!-- Bottom Right Ribbon-->
+<div class="ribbon-bottomright"></div>
 
 </body>
 </html>
