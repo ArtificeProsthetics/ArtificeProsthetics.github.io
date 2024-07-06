@@ -447,7 +447,7 @@ a {
 
 .sidebar {
     height: 100%;
-    width: 15%;
+    width: 10%;
     background-color: #222;
     position: fixed !important;
     z-index: 1;
@@ -1223,7 +1223,7 @@ a {
 }
 
 .jumbo {
-    font-size: 9vw !important
+    font-size: 9vw !important;
 }
 
 .left-align {
@@ -1292,7 +1292,7 @@ a {
 }
 
 .margin-top {
-    margin-top:24px !important
+    margin-top:12px !important
 }
 
 .margin-bottom {
@@ -1769,6 +1769,8 @@ spline-viewer {
     text-transform: uppercase;
     writing-mode: vertical-rl;
     letter-spacing: 5px;
+    width: 6.8vw;
+    transform: translateX(50%);
 }
 .vertical-center {
     position: absolute;
