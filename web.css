@@ -1762,8 +1762,9 @@ a {
 }
 
 spline-viewer {
-    /* outline: 1px solid red; */
     width:100%;
+    bottom: 50%;
+    transform: translateY(50%);
 }
 
 .vertical-title {
