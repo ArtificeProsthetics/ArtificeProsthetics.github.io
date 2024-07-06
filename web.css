@@ -1774,7 +1774,7 @@ spline-viewer {
 }
 .vertical-center {
     position: absolute;
-    top: 50%;
+    top: 57%;
     transform: translateY(-50%);
 }
 
