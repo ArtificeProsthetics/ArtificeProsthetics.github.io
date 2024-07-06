@@ -1760,11 +1760,8 @@ a {
 .border-pale-blue, .hover-border-pale-blue:hover {
     border-color: #e7ffff !important
 }
-
 spline-viewer {
-    width:100%;
-    bottom: 50%;
-    transform: translateY(50%);
+    width: 100%;
 }
 
 .vertical-title {
