@@ -447,7 +447,7 @@ a {
 
 .sidebar {
     height: 100%;
-    width: 200px;
+    width: 100px;
     background-color: #222;
     position: fixed !important;
     z-index: 1;
@@ -465,7 +465,7 @@ a {
 .bar-block .dropdown-hover .button, .bar-block .dropdown-click .button {
     width: 100%;
     text-align: left;
-    padding: 8px 16px
+    padding: 0px 16px
 }
 
 .main, #main {
@@ -526,7 +526,7 @@ a {
 .bar-block .bar-item {
     width: 100%;
     display: block;
-    padding: 8px 16px;
+    padding: 0px 16px;
     text-align: left;
     border: none;
     white-space: normal;
@@ -836,8 +836,8 @@ a {
     }
 
     .main {
-        margin-left: 0 !important;
-        margin-right:0 !important
+        margin-left: 0;
+        margin-right:0
     }
 
     .auto {
@@ -981,7 +981,7 @@ a {
 }
 
 .container, .panel {
-    padding:0.01em 16px
+    padding:0.01em 0px
 }
 
 .panel {
@@ -1292,7 +1292,7 @@ a {
 }
 
 .margin-top {
-    margin-top:16px !important
+    margin-top:24px !important
 }
 
 .margin-bottom {
@@ -1759,4 +1759,16 @@ a {
 
 .border-pale-blue, .hover-border-pale-blue:hover {
     border-color: #e7ffff !important
+}
+
+spline-viewer {
+    /* outline: 1px solid red; */
+    width:115%;
+}
+
+.vertical-title {
+    color: #3a3a3a;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    letter-spacing: 5px;
 }
