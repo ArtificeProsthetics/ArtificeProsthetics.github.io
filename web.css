@@ -447,11 +447,11 @@ a {
 
 .sidebar {
     height: 100%;
-    width: 100px;
+    width: 150px;
     background-color: #222;
     position: fixed !important;
     z-index: 1;
-    overflow: auto
+    overflow: hidden;
 }
 
 .bar-block .dropdown-hover, .bar-block .dropdown-click {
