@@ -1806,7 +1806,6 @@ spline-viewer {
     position: fixed;
     top: -35px;
     overflow: hidden;
-    background: red;
     z-index: 2;
 }
 
