@@ -1804,15 +1804,10 @@ spline-viewer {
 
 .secret-text {
     position: fixed;
-    top: -75px;
-    overscroll-behavior: none;
-    overflow: visible;
+    top: -35px;
+    overflow: hidden;
     background: red;
     z-index: 2;
-}
-
-body {
-    overflow: visible;
 }
 
 .noselect {
