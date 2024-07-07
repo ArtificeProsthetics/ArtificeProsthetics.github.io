@@ -1781,16 +1781,17 @@ spline-viewer {
 .ribbon-topleft {
     width: 0; 
     height: 0; 
+    position: fixed;
     border-left: 10vw solid transparent;
     border-right: 10vw solid transparent;
     border-top: 10vw solid black;
     transform: translateX(-50%);
-    z-index: 1;
 }
 
 .ribbon-bottomright {
     width: 0; 
     height: 0; 
+    position: fixed;
     border-left: 10vw solid transparent;
     border-right: 10vw solid transparent;
     border-bottom: 10vw solid black;
@@ -1804,6 +1805,7 @@ spline-viewer {
 .secret-text {
     position: fixed;
     top: -50px;
+    overscroll-behavior: none;
 }
 
 .noselect {
