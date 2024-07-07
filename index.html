@@ -22,7 +22,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <nav class="sidebar bar-block hide-medium hide-small center">
   <!-- Avatar image in top left corner -->
   <img src="images/Wireframe.black.png" style="width: 100%">
-  <t class="vertical-title jumbo margin-top">Artifice</t>
+  <t class="noselect vertical-title jumbo margin-top">Artifice</t>
   
 </nav>
 
@@ -38,6 +38,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
       shadowRoot.querySelector('#logo').remove();
     }
+    </script>
+    <script type="module">
+      import Spline from '@splinetool/react-spline/next';
+
+      export default function Home() {
+        return (
+          <main>
+            <Spline
+              scene="https://prod.spline.design/jddavdombxwYi4Es/scene.splinecode" 
+            />
+            spline.setVariables(start: "True");
+          </main>
+        );
+      }
     </script>
 
 <!-- END PAGE CONTENT -->
