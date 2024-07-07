@@ -1785,6 +1785,7 @@ spline-viewer {
     border-right: 10vw solid transparent;
     border-top: 10vw solid black;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .ribbon-bottomright {
@@ -1797,6 +1798,12 @@ spline-viewer {
     bottom: 0;
     right: 0;
     transform: translateX(50%);
+    z-index: 1;
+}
+
+.secret-text {
+    position: fixed;
+    top: -50px;
 }
 
 .noselect {
@@ -1807,9 +1814,9 @@ spline-viewer {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-  }
+}
 
-  ::-webkit-scrollbar{
+::-webkit-scrollbar{
 	width: 3px;
 }
 
