@@ -1808,3 +1808,15 @@ spline-viewer {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+  ::-webkit-scrollbar{
+	width: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #575757;
+}
