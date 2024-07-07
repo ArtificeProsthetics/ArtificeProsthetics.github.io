@@ -1804,7 +1804,7 @@ spline-viewer {
 
 .secret-text {
     position: fixed;
-    top: -50px;
+    top: -35px;
     overscroll-behavior: none;
 }
 
