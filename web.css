@@ -1803,6 +1803,15 @@ spline-viewer {
     z-index: 1;
 }
 
+.circle-button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    z-index: 1;
+
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
