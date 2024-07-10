@@ -1761,7 +1761,7 @@ a {
     border-color: #e7ffff !important
 }
 spline-viewer {
-    width: 100%;
+    width: 100vw;
 }
 
 .vertical-title{
@@ -1804,12 +1804,13 @@ spline-viewer {
 }
 
 .circle-button {
+    position: absolute;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    left: 50%;
+    left: 100%;
+    top: 50%;
     z-index: 1;
-
 }
 
 .noselect {
