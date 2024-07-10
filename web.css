@@ -1764,14 +1764,15 @@ spline-viewer {
     width: 100%;
 }
 
-.vertical-title {
+.vertical-title{
     color: #3a3a3a;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     letter-spacing: 5px;
-    width: 6.8vw;
-    transform: translateX(50%);
+    margin: auto;
+    font-size: 48px;
 }
+
 .vertical-center {
     position: absolute;
     top: 50%;
@@ -1800,13 +1801,6 @@ spline-viewer {
     right: 0;
     transform: translateX(50%);
     z-index: 1;
-}
-
-.secret-text {
-    position: fixed;
-    top: -35px;
-    overflow: hidden;
-    z-index: 2;
 }
 
 .noselect {
