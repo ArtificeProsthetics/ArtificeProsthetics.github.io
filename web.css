@@ -1762,6 +1762,7 @@ a {
 }
 spline-viewer {
     width: 100vw;
+    position: relative;
 }
 
 .vertical-title{
@@ -1806,12 +1807,45 @@ spline-viewer {
 .circle-button {
     position: absolute;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    left: 100%;
-    top: 50%;
+    height: 8.5vw;
+    width: 8.5vw;
     z-index: 1;
+    background: transparent;
+    border: transparent;
+    font-size: 0;
 }
+
+.hang-loose {
+    top: 40%;
+    right: 21%;
+}
+
+.contact {
+    top: 12%;
+    right: 29.5%;
+}
+
+.portfolio {
+    top: 1.5%;
+    right: 46%;
+}
+
+.about {
+    top: 12%;
+    right: 62%;
+}
+
+.social {
+    top: 40%;
+    right: 70.1%;
+}
+
+
+
+
+
+
+
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
