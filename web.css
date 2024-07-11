@@ -1771,7 +1771,7 @@ spline-viewer {
     writing-mode: vertical-rl;
     letter-spacing: 5px;
     margin: auto;
-    font-size: 48px;
+    font-size: 5vw;
 }
 
 .vertical-center {
