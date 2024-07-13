@@ -21,6 +21,43 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p class="center">contact</p>
     <p>Business: <a href=mailto:lincoln.wagner@utah.edu>lincoln.wagner@utah.edu</a></p>
     <p>Discord: <a href="https://discord.com/users/412796341350170627">skillplants</a></p>
-    <p>Ping Me: <a href=""></a></p>
+    <label for="pingMessage">Ping Me Directly:</label>
+    <form onsubmit="pingDiscord(event)">
+        <textarea maxlength="150" id="pingMessage"></textarea>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+     async function pingDiscord(ev) {
+        ev.preventDefault();
+
+        const senderMessage = document
+          .getElementById('pingMessage').value;
+
+        const webhookBody = {
+          embeds: [{
+            title: 'Artifice Ping',
+            fields: [
+              { name: 'Message', value: senderMessage }
+            ]
+          }],
+        };
+
+        const webhookUrl = 'https://discord.com/api/webhooks/1261543220572327966/FJ_LPCE6riTT9b6V2qJQDeySEY_YdDBCWS3Gb5CRPIe3Z0Wc8osXVID4LAjorbjxNG86';
+
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(webhookBody),
+        });
+
+        if (response.ok) {
+          alert('Ping Sent!');
+        } else {
+          alert('There was an error! Try again later!');
+        }
+      }        
+    </script>
 </body>
 </html>

@@ -107,7 +107,7 @@ hr {
     overflow: visible
 }
 
-button, input, select, textarea, optgroup {
+button, input, select, optgroup {
     font: inherit;
     margin:0
 }
@@ -149,10 +149,6 @@ legend {
     max-width: 100%;
     padding: 0;
     white-space:normal
-}
-
-textarea {
-    overflow: auto
 }
 
 [type=checkbox], [type=radio] {
