@@ -89,7 +89,7 @@ pre {
     color: white;
     margin: 0;
     padding: 0;
-    text-indent: 307px;
+    text-indent: min(307px, 51vw);
     border: transparent solid 0px;
     outline: none;
     text-decoration: none;
