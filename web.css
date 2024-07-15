@@ -15,6 +15,97 @@ pre {
     margin: 0;
 }
 
+.typing1 {
+    animation: typing .25s linear 0s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing2 {
+    animation: typing .25s linear .25s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing3 {
+    animation: typing .25s linear .5s;
+    overflow: hidden;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing4 {
+    animation-name: typehide;
+    animation: typing .25s linear .75s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing5 {
+    animation: typing .25s linear 1s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing6 {
+    animation: typing .25s linear 1.25s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing7 {
+    animation: typing .25s linear 1.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing8 {
+    animation: typing .25s linear 1.75s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing9 {
+    animation: typing .25s linear 2s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.typing10 {
+    animation: typing .25s linear 2.25s;
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        visibility: visible;
+        width: 0;
+    }
+    to {
+        visibility: visible;
+        width: 100%;
+    }
+}
+
 .bottom {
     position: absolute;
     bottom: 0vh;
@@ -208,5 +299,3 @@ spline-viewer {
 ::-webkit-scrollbar-thumb {
     background: #575757;
 }
-
-    
