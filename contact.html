@@ -42,7 +42,7 @@
     <p>- <i>README.md</i><br>- send message: return<br>- regular return: shift + return<br>- enter your message next</p>
       <div id="contact-terminal">
         <label for="pingMessage">-<t style="color: #018911;"> Artifice@contact-page</t>:/ping-me-directly$</label>
-            <form onsubmit="pingDiscord(event)" spellcheck="false">
+            <form spellcheck="false">
                 <textarea maxlength="150" id="pingMessage" autofocus></textarea>
             </form>
         <script>
@@ -50,8 +50,10 @@
 
           form.addEventListener('keypress', function (event) {
             if (event.keyCode === 13) {
-              form.submit()
-              pingDiscord(event);
+              event.preventDefault();
+              if (confirm("Send Ping?")) {
+                pingDiscord(event);
+              }
             }
           });
 
