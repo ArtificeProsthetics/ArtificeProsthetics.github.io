@@ -97,6 +97,15 @@ pre {
     caret-color: #018911;
 }
 
+.back-to-home::before {
+    content: "";
+    width: min(120px, 22vw);
+    height: min(20px, 3vw);
+    background: transparent;
+    position: absolute;
+    z-index: 1000;
+}
+
 spline-viewer {
     width: 100vw;
     position: relative;
