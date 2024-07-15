@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-#pingMessage, body, pre, p, h10,h2,h3,h4,h5,h6 {font-family: "Roboto Mono", monospace; font-weight: 300; font-style: normal; font-size: 12px;}
+#pingMessage, label, body, pre, p, h10,h2,h3,h4,h5,h6 {font-family: "Roboto Mono", monospace; font-weight: 300; font-style: normal; font-size: min(12px, 2vw);}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 10vw}
 </style>
@@ -18,7 +18,7 @@
 <body class="dark-blue">
     <div class="bottom" style="margin-left: 7px;">
     <p>- <t style="color: #018911;"> Artifice</t>:-$ art contact-page</p>
-<pre>--------------------------------------------------------------
+<pre>- -------------------------------------------------------------
 -  .d0001b.                    110                      011    
 - d00P  Y10b                   100                      100    
 - 111    010                   010                      100    
@@ -27,7 +27,7 @@
 - 100    100 010  001 111  011 100    .d010101 110      010   
 - Y10b  d11P Y01..10P 100  101 Y00b.  011  010 Y10b.    Yk01b.  
 -  "Y0101P"   "Y11P"  011  000  "Y100 "Y001110  "Y1010P  "Y110
---------------------------------------------------------------
+- -------------------------------------------------------------
 -
 -
 -
@@ -39,26 +39,35 @@
     <p>- 👾 discord-friend-invite:-----------------------<a href="https://discord.com/users/412796341350170627">skillplants</a></p>
     <p>- <t style="color: #018911;"> Artifice@contact-page</t>:-$ cd ping-me-directly</p>
     <p>- <t style="color: #018911;"> Artifice@contact-page</t>:/ping-me-directly$ exec initialize-ping</p>
-    <p>- <i>README.md</i><br>- send message: return<br>- regular return: shift + return<br>- enter your message next</p>
+    <p>- <i>README.md</i><br>- send message: return<br>- regular return: shift + return</p>
+    <p id="count">- enter your message next (130)</p>
       <div id="contact-terminal">
         <label for="pingMessage">-<t style="color: #018911;"> Artifice@contact-page</t>:/ping-me-directly$</label>
             <form spellcheck="false">
                 <textarea maxlength="130" id="pingMessage" autofocus></textarea>
             </form>
         <script>
+
+          // key detection
+
           const form = document.querySelector('form');
 
           form.addEventListener('keypress', function (event) {
-            if (event.keyCode === 13) {
+            if (event.keyCode === 13 && !event.shiftKey) {
               event.preventDefault();
-              if (confirm("Send Ping?")) {
+              if (confirm("Send Ping? Y / N\n(return) / (esc)")) {
                 pingDiscord(event);
               }
             }
           });
+          // text area character limit counter
+          form.addEventListener('keyup', function (event) {
+            document.getElementById('count').innerHTML = "- enter your message next (" + (130 - document.getElementById('pingMessage').value.length) + ")";
+          });
 
+          // discord ping
           
-        async function pingDiscord(ev) {
+          async function pingDiscord(ev) {
             ev.preventDefault();
 
             const senderMessage = document
