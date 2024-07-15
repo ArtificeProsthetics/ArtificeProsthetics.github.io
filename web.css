@@ -95,6 +95,12 @@ pre {
     animation-fill-mode: forwards;
 }
 
+.reveal {
+    animation: reveal 0s linear 2.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
 @keyframes typing {
     from {
         visibility: visible;
@@ -103,6 +109,12 @@ pre {
     to {
         visibility: visible;
         width: 100%;
+    }
+}
+
+@keyframes reveal {
+    to {
+        opacity: 100;
     }
 }
 
