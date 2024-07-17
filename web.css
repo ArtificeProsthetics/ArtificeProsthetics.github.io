@@ -23,6 +23,10 @@ sup {
     font-size: small;
 }
 
+.margin12 {
+    margin: 12px;
+}
+
 .typing1 {
     animation: typing .25s linear 0s;
     overflow: hidden;
@@ -126,7 +130,12 @@ sup {
     }
 }
 
-.bottom {
+div.bottom {
+    position: absolute;
+    bottom: 0vh;
+}
+
+t.bottom {
     position: static;
     bottom: 0vh;
 }
@@ -147,6 +156,10 @@ sup {
 
 .hide {
     display:none; 
+}
+
+.invis {
+    visibility: hidden;
 }
 
 @media (max-width: 600px) {
@@ -258,34 +271,35 @@ spline-viewer {
 .dropdown-group {
     display: grid;
     margin: 12px;
+    text-align: right;
 }
 
 .carrot {
     display: none;    
 }
 
+section > label {
+    font-family: "Roboto Mono", monospace;
+}
+
 #header1 {
     display: inline;
     font-size: 18px;
-    text-align: right;
 }
 
 #header2 {
     display: inline;
     font-size: 18px;
-    text-align: right;
 }
 
 #header3 {
     display: inline;
     font-size: 18px;
-    text-align: right;
 }
 
 #header4 {
     display: inline;
     font-size: 18px;
-    text-align: right;
 }
 
 #header1::before {
@@ -324,26 +338,121 @@ spline-viewer {
     padding-top: 4px;
 }
 
+section > label::before { 
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    right: 112px;
+    transform: translateY(12px);
+    width: calc(100% - 124px);
+    height: 3px;
+    background-color: #334553;
+    visibility: hidden;
+}
+
+section > label::after { 
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    left: 12px;
+    transform: translateY(12px);
+    width: 3px;
+    background-color: #334553;
+    visibility: hidden;
+}
+
+#header1 > input:checked ~ label::before {
+    animation: headerh 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#header1 > input:checked ~ label::after {
+    animation: headerv 0.1s linear 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#header2 > input:checked ~ label::before {
+    animation: headerh 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#header2 > input:checked ~ label::after {
+    animation: headerv 0.1s linear 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#header3 > input:checked ~ label::before {
+    animation: headerh 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#header3 > input:checked ~ label::after {
+    animation: headerv 0.1s linear 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#header4 > input:checked ~ label::before {
+    animation: headerh 0.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+#header4 > input:checked ~ label::after {
+    animation: headerv 0.1s linear 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes headerh {
+   from {
+        width: 0%;
+        visibility: visible;
+   } 
+   to {
+        width: calc(100% - 124px);
+        visibility: visible;
+   }
+}
+
+@keyframes headerv {
+    from {
+         height: 0%;
+         visibility: visible;
+    } 
+    to {
+         height: 20px;
+         visibility: visible;
+    }
+ }
+
 .carrot ~ p {
     text-align: left;
     margin-top: 18px;
     margin-right: 10vw;
+    overflow: hidden;
+    height: 0;
 }
 
 #carrot1:checked ~ p {
-    display: grid;
+    transition: all 0.3s 0.7s;
+    visibility: visible;
+    height: 100%;
 }
 
 #carrot2:checked ~ p {
-    display: grid;
+    transition: all 0.3s 0.7s;
+    visibility: visible;
+    height: 100%;
 }
 
 #carrot3:checked ~ p {
-    display: grid;
+    transition: all 0.3s 0.7s;
+    visibility: visible;
+    height: 100%;
 }
 
 #carrot4:checked ~ p {
-    display: grid;
+    transition: all 0.3s 0.7s;
+    visibility: visible;
+    height: 100%;
 }
 
 .ribbon-topleft {
