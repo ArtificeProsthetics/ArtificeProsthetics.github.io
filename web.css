@@ -15,6 +15,14 @@ pre {
     margin: 0;
 }
 
+sup {
+    font-size: 10px;
+}
+
+.small {
+    font-size: small;
+}
+
 .typing1 {
     animation: typing .25s linear 0s;
     overflow: hidden;
@@ -119,7 +127,7 @@ pre {
 }
 
 .bottom {
-    position: absolute;
+    position: static;
     bottom: 0vh;
 }
 
@@ -138,7 +146,7 @@ pre {
 }
 
 .hide {
-    display:none !important
+    display:none; 
 }
 
 @media (max-width: 600px) {
@@ -228,6 +236,113 @@ spline-viewer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#definition-quote {
+    width: 100vw;
+    display: grid;
+    margin-top: 12px;
+}
+
+#definition-quote .artifice {
+    margin: auto;
+    font-size: 18px;
+    padding-right: 400px;
+}
+
+#definition-quote .definition {
+    text-align: center;
+    margin: auto;
+}
+
+.dropdown-group {
+    display: grid;
+    margin: 12px;
+}
+
+.carrot {
+    display: none;    
+}
+
+#header1 {
+    display: inline;
+    font-size: 18px;
+    text-align: right;
+}
+
+#header2 {
+    display: inline;
+    font-size: 18px;
+    text-align: right;
+}
+
+#header3 {
+    display: inline;
+    font-size: 18px;
+    text-align: right;
+}
+
+#header4 {
+    display: inline;
+    font-size: 18px;
+    text-align: right;
+}
+
+#header1::before {
+    font-family: "fontawesome";
+    content: "\f054";
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+#header2::before {
+    font-family: "fontawesome";
+    content: "\f054";
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+#header3::before {
+    font-family: "fontawesome";
+    content: "\f054";
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+#header4::before {
+    font-family: "fontawesome";
+    content: "\f054";
+    font-size: 14px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+.carrot ~ p {
+    text-align: left;
+    margin-top: 18px;
+}
+
+#carrot1:checked ~ p {
+    display: grid;
+}
+
+#carrot2:checked ~ p {
+    display: grid;
+}
+
+#carrot3:checked ~ p {
+    display: grid;
+}
+
+#carrot4:checked ~ p {
+    display: grid;
 }
 
 .ribbon-topleft {
