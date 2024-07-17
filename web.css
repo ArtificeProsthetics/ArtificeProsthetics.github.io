@@ -241,7 +241,7 @@ spline-viewer {
 #definition-quote {
     width: 100vw;
     display: grid;
-    margin-top: 12px;
+    margin-top: 24px;
 }
 
 #definition-quote .artifice {
@@ -327,6 +327,7 @@ spline-viewer {
 .carrot ~ p {
     text-align: left;
     margin-top: 18px;
+    margin-right: 10vw;
 }
 
 #carrot1:checked ~ p {
@@ -416,7 +417,7 @@ spline-viewer {
 }
 
 ::-webkit-scrollbar{
-	width: 3px;
+	width: 0px;
 }
 
 ::-webkit-scrollbar-track-piece {
