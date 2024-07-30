@@ -19,8 +19,19 @@ sup {
     font-size: 10px;
 }
 
+.vertflex {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-content: space-evenly;
+}
+
 .small {
     font-size: small;
+}
+
+.marginauto {
+    margin: auto;
 }
 
 .margin12 {
@@ -193,6 +204,10 @@ t.bottom {
     background-color: #0a0f15;
 }
 
+.transparent-background {
+    background: transparent;
+}
+
 #contact-terminal {
     display: flex;
 }
@@ -237,6 +252,7 @@ t.bottom {
 spline-viewer {
     width: 100vw;
     position: relative;
+    padding-top: 24px;
 }
 
 .vertical-title{
@@ -473,6 +489,36 @@ section > label::after {
     transition: all 0.3s 0.7s;
     visibility: visible;
     height: 100%;
+}
+
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow: hidden auto;
+}
+
+.background-image {
+    position: absolute;
+    background-color: #0a0f15;
+    background-image: url("images/Wireframe.white.png");
+    background-blend-mode: color-burn;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translate3d(0px, 1000%, -15px) scale(25);
+}
+
+.scrolling-content {
+    position: absolute;
+    overscroll-behavior: contain;
+}
+
+.portfolio-image {
+    width: 50vw;
 }
 
 .ribbon-topleft {
